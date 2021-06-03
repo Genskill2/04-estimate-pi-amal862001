@@ -39,5 +39,19 @@ int main(void) {
   }
 }
 
-
+float mc_pi(int a){
+    int s1=0;
+    float pi;
+   for (int i=0; i<a; ++i) {
+       float x=frandom();
+       float y=frandom();
+       float d=x*x + y*y;
+       
+       if (d<=1)
+           s1=s1+1;
+      
+   }
+   pi= (double) (s1*4)/a;
+   return pi;
+}
 
